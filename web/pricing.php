@@ -22,69 +22,38 @@ $('#pricing').addClass("active");
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
 						<!----- planes-head ----->
+						<?php 
+						$db = new SQLite3('bd/redeshost') or die('Unable to open database');
+
+$result = $db->query('SELECT p.id_product,UPPER(p.product_name) product_name,p.product_price, p.description_product, d.campo1,d.campo2,d.campo3,d.campo4,d.campo5,d.campo6,d.campo7
+FROM product p, product_detail d
+WHERE p.id_product=d.id_product');
+while ($row = $result->fetchArray()){?>
+
 						<div class="col-md-3">
 							<div class="pricing-table-grid">
-								<h3>BASIC</h3>
+								<h3><?php echo $row['product_name'];?></h3>
 								<ul>
-									<li><span>$13.66$ /Mo</span></li>
-									<li><a href="#">10GB Bandwidth</a></li>
-									<li><a href="#">1024MB RAM</a></li>
-									<li><a href="#">1 Dedicated IP Address</a></li>
-									<li><a href="#">Cpanel/WHM include</a></li>
-									<li><a href="#">Open VZ include</a></li>
-									<li class="price-btn"><a href="#">10 GB HDD</a></li>
+									<li><span>$<?php echo $row['product_price'];?> Mensual</span></li>
+									<li><a href="#">Espacio Disco <?php echo $row['campo1'];?></a></li>
+									<li><a href="#">Tráfico Mensual <?php echo $row['campo2'];?></a></li>
+									<li><a href="#">Nº BDs <?php echo $row['campo3'];?></a></li>
+									<li><a href="#">Cuentas de Correos <?php echo $row['campo4'];?></a></li>
+									<li><a href="#">Dominios Adicionales <?php echo $row['campo5'];?></a></li>
+									<li><a href="#">Panel de control <?php echo $row['campo6'];?></a></li>
+									<li><a href="#">Velocidad enlace <?php echo $row['campo7'];?></a></li>
 								</ul>
-								<a class="order-btn" href="producto.php?id_product=1">Contratar</a>
+								<a class="order-btn" href="producto.php?id_product=<?php echo $row['id_product'];?>">Contratar</a>
 							</div>
 						</div>
-						<div class="col-md-3">
-							<div class="pricing-table-grid">
-								<h3>PREMIUM</h3>
-								<ul>
-									<li><span>$16.66$ /Mo</span></li>
-									<li><a href="#">20GB Bandwidth</a></li>
-									<li><a href="#">1024MB RAM</a></li>
-									<li><a href="#">2 Dedicated IP Address</a></li>
-									<li><a href="#">Cpanel/WHM include</a></li>
-									<li><a href="#">Open VZ include</a></li>
-									<li class="price-btn"><a href="#">10 GB HDD</a></li>
-								</ul>
-								<a class="order-btn" href="#">Order Now</a>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="pricing-table-grid">
-								<h3>Advance</h3>
-								<ul>
-									<li><span>$20.56$</span></li>
-									<li><a href="#">30GB Bandwidth</a></li>
-									<li><a href="#">1024MB RAM</a></li>
-									<li><a href="#">5 Dedicated IP Address</a></li>
-									<li><a href="#">Cpanel/WHM include</a></li>
-									<li><a href="#">Open VZ include</a></li>
-									<li class="price-btn"><a href="#">10 GB HDD</a></li>
-								</ul>
-								<a class="order-btn" href="#">Order Now</a>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="pricing-table-grid">
-								<h3>Gold</h3>
-								<ul>
-									<li><span>$28.66$ /Mo</span></li>
-									<li><a href="#">50GB Bandwidth</a></li>
-									<li><a href="#">1024MB RAM</a></li>
-									<li><a href="#">10 Dedicated IP Address</a></li>
-									<li><a href="#">Cpanel/WHM include</a></li>
-									<li><a href="#">Open VZ include</a></li>
-									<li class="price-btn"><a href="#">10 GB HDD</a></li>
-								</ul>
-								<a class="order-btn" href="#">Order Now</a>
-							</div>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
+						
+						
+					
+				<?php }?>
 				</div>
+				</div>
+				<div class="clearfix"> </div>
+			
 				<!----- Pricing-tables ---->
 				<!----- out-features ----->
 				<div class="our-features">

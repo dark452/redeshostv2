@@ -57,8 +57,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<ul class="top-nav">
 								<li id="index"><a href="index.php">Inicio </a></li>
 								<li id="about"><a href="../web/about.php">Nosotros</a></li>
-								<li id="pricing"><a href="../web/pricing.php">Pricing</a></li>
-								<li id="domain"><a href="../web/domain.php"> Domain</a></li>
+								<li id="pricing"><a href="../web/pricing.php">Hosting</a></li>
+								<li id="domain"><a href="../web/domain.php"> Servicios</a></li>
 								<li id="hosting"><a href="../web/hosting.php">Hosting</a></li>
 							</ul>
 							<a href="#" id="pull"><img src="../web/images/nav-icon.png" title="menu" /></a>
