@@ -1,5 +1,9 @@
 <?php
 include "header.php";
+include "classes/geo.php";
+
+$moneda = ip_info("Visitor", "Country Code");
+
 ?>
 <script>
 $('#pricing').addClass("active");
@@ -25,16 +29,23 @@ $('#pricing').addClass("active");
 						<?php 
 						$db = new SQLite3('bd/redeshost') or die('Unable to open database');
 
-$result = $db->query('SELECT p.id_product,UPPER(p.product_name) product_name,p.product_price, p.description_product, d.campo1,d.campo2,d.campo3,d.campo4,d.campo5,d.campo6,d.campo7
+$result = $db->query('SELECT p.id_product,UPPER(p.product_name) product_name,p.product_price_clp, p.product_price_usd, p.description_product, d.campo1,d.campo2,d.campo3,d.campo4,d.campo5,d.campo6,d.campo7
 FROM product p, product_detail d
-WHERE p.id_product=d.id_product');
+WHERE p.id_product=d.id_product 
+ORDER BY p.id_product');
 while ($row = $result->fetchArray()){?>
 
 						<div class="col-md-3">
 							<div class="pricing-table-grid">
 								<h3><?php echo $row['product_name'];?></h3>
 								<ul>
-									<li><span>$<?php echo $row['product_price'];?> Mensual</span></li>
+									<li><span>$<?php 
+										if($moneda=='CL'){
+									echo $row['product_price_clp']." CLP";
+									}
+									else{
+											echo $row['product_price_usd']. " USD";
+									}?> Mensual</span></li>
 									<li><a href="#">Espacio Disco <?php echo $row['campo1'];?></a></li>
 									<li><a href="#">Tráfico Mensual <?php echo $row['campo2'];?></a></li>
 									<li><a href="#">Nº BDs <?php echo $row['campo3'];?></a></li>

@@ -1,24 +1,24 @@
 <?php
 include "header.php";
 $id=$_GET['id_product'];
-//$moneda = $_GET['moneda'];
+include "classes/geo.php";
+
+$moneda = ip_info("Visitor", "Country Code");
 
 $db = new SQLite3('bd/redeshost') or die('Unable to open database');
 
-$result = $db->query('SELECT * FROM product WHERE id_product='.$id) or die('Query failed');
+$result = $db->query('SELECT p.id_product,UPPER(p.product_name) product_name,p.product_price_clp, 
+p.product_price_usd, p.description_product,p.logo, d.campo1,d.campo2,d.campo3,d.campo4,d.campo5,d.campo6,d.campo7
+FROM product p, product_detail d
+WHERE p.id_product=d.id_product 
+ORDER BY p.id_product');
 while ($row = $result->fetchArray())
 {
   $product_name= $row['product_name'];
   $product_description =$row['description_product'];
   $product_price_clp = $row['product_price_clp'];
   $product_price_usd = $row['product_price_usd'];
-
-
   $logo = $row['logo'];
-}
-$result_detalle = $db->query('SELECT * FROM product_detail WHERE id_product='.$id) or die('Query failed');
-while ($row = $result_detalle->fetchArray())
-{
   $campo1= 	$row['campo1'];
   $campo2 =	$row['campo2'];
   $campo3 = $row['campo3'];
@@ -26,8 +26,8 @@ while ($row = $result_detalle->fetchArray())
   $campo5 = $row['campo5'];
   $campo6 = $row['campo6'];
   $campo7 = $row['campo7'];
-
 }
+
 ?>
 
 			<!----- product ----->
@@ -45,16 +45,15 @@ while ($row = $result_detalle->fetchArray())
 						<div class="contact-bottom-grids">
 							<div class="contact-bottom-grid-left">
 								<h3>Descripción</h3>
-								<img src="../web/images/<?php echo $logo;?>" title="name" />
+								<img src="../web/images/<?php echo $logo;?>" height="80%" width="80%" />
 
 								<p><?php echo $product_description;?></p>
 								
-							
-									
-								</div>
+							</div>
+								
 							<div class="contact-bottom-grid-right">
 								<h3>Detalle</h3>
-								<form>									
+																
 									<div class="pricing-table-grid">
 										
 										<ul>
@@ -66,35 +65,55 @@ while ($row = $result_detalle->fetchArray())
 											<li><a href="#">Panel de control: <?php echo $campo6;?></a></li>
 											<li><a href="#">Velocidad enlace: <?php echo $campo7;?></a></li>
 										</ul>										
-									</div>								
-																	
-									<input type="submit" value="Enviar" />
-									</div>	
-								</form>
-							</div>
+									</div>		
+									
+
+								</div>	
+								
+							
+									
+									
+							
 							<div class="clearfix"> </div>
 						</div>
+						<div class="clearfix"> </div>
+						<div class="pricing-plan">
+							<div class="container">
+					<div class="pricing-plan-grids">
+							        <div class="pricing-plan-left">
+							         <h2>Seleccione una opción :	</h2>
+										<select id="cd-dropdown">
+											<option selected>1 Mes - $<?php 
+											if($moneda=='CL'){
+												echo $product_price_clp. " CLP";
+											}else{
+												echo $product_price_usd. " USD";
+											
+											}
+											?>
+											</option>
+											<option>12 Meses - $<?php
+												if($moneda=='CL'){
+												echo (12*$product_price_clp)*0.834." CLP";
+											}else{
+												echo (12*$product_price_usd)*0.834. " USD";
+											}
+											?>
+											</option>
+										</select></div>
+										<div class="pricing-plan-right">
+										<a class="price-btn" href="pricing.html">Agregar al carro</a>									
+									</div>	
+									<div class="clearfix"> </div>	
+									</div>							
+							</div>
+							</div>
 					</div>
 				</div>
 				<!----- hosting-grids ----->
 			</div>
 			<!----- About ----->
-			<!----- pricing and plan ----->
-			<div class="pricing-plan">
-				<div class="container">
-					<div class="pricing-plan-grids">
-						<div class="pricing-plan-left">
-							<h2>Desea ver nuestros planes y precios?</h2>
-							<span>Presione el botón en la sección derecha.</span>
-						</div>
-						<div class="pricing-plan-right">
-							<a class="price-btn" href="pricing.php">Planes y precios</a>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-			</div>
-			<!----- pricing and plan ----->
+			
 			<?php include "footer.php";
 			?>
 	</body>
