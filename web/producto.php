@@ -82,6 +82,7 @@ while ($row = $result->fetchArray())
 					<div class="pricing-plan-grids">
 							        <div class="pricing-plan-left">
 							         <h2>Seleccione una opción :	</h2>
+							         <p></p>
 										<select id="cd-dropdown">
 											<option selected>1 Mes - $<?php 
 											if($moneda=='CL'){

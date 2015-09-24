@@ -9,6 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<head>
 		<title>RedesHost</title>
 		<link href="../web/css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link href="../web/css/font-awesome.min.css" rel='stylesheet' type='text/css' />
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="../web/js/jquery.min.js"></script>
 		 <!-- Custom Theme files -->

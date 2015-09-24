@@ -10,7 +10,7 @@ $('#domain').addClass("active");
 				<!----- header-section ---->
 				<div class="header-section">
 					<div class="container">
-						<h1>Our domains</h1>
+						<h1>Nuestros dominios</h1>
 					</div>
 				</div>
 				<!----- header-section ---->

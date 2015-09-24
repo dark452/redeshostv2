@@ -50,7 +50,7 @@ body a{
 }
 .top-nav ul li.active a,
 .top-nav ul li a:hover{
-	color:#ffe13e;
+	color:#CFAB61;
 }
 .logo a{
 	display:block;
@@ -195,15 +195,15 @@ nav a#pull {
 	border-left:1px solid #EEE;
 }
 a.chat{
-	background:#ffe13e;
-	color:#202242;
+	background:#cc7741;
+	color:#fff;
 	padding:0.8em 1.5em;
 	font-weight:600;
 	text-decoration:none;
 }
 a.chat:hover{
-	color:#ffe13e;
-	background:#202242;
+	color:#CFAB61;
+	background:#00343A;
 }
 .contact-info-right h3{
 	color:#202242;
@@ -266,7 +266,7 @@ a.chat:hover{
 }
 .domain-Serach-bar-center{
 	position: relative;
-	background: #ffe13e;
+	background: #cc7741;
 	padding: 0.8em 1em;
 	width: 20%;
 	height: 54px;
@@ -275,7 +275,7 @@ a.chat:hover{
 	cursor:pointer;
 }
 .domain-Serach-bar-center ul li span{
-	background: #ffe13e;
+	background: #cc7741;
 	padding: 0.5em 0em;
 	display: block;
 	width: 100%;
@@ -297,7 +297,7 @@ a.chat:hover{
 .fleft{
 	text-align:center;
 	position:relative;
-	background:#ffe13e;
+	background;
 	display:block;
 	height:40px;
 }
@@ -310,7 +310,7 @@ a.chat:hover{
 	list-style:none;
 }
 .domain-Serach-bar-right input[type="submit"]{
-	background:#ffe13e;
+	background:#cc7741;
 	color:#FFF;
 	border:none;
 	padding:1em 0.712em;
@@ -341,7 +341,7 @@ a.chat:hover{
 .services-left{
 	float:left;
 	width:50%;
-	background:#202242;
+	background:#20242f;
 	padding:6em 0;
 }
 .services-left h2{
@@ -366,14 +366,14 @@ a.s-btn{
 	text-decoration:none;
 }
 a.s-btn:hover{
-	border:2px solid #ffe13e;
+	border:2px solid #CFAB61;
 	color:#ffe13e;
 }
 /*----- */
 .services-right{
 	float:left;
 	width:50%;
-	background:#ffe13e;
+	background:#444653;
 	padding: 5.7em 0;
 }
 .services-right h2{
@@ -455,7 +455,7 @@ a.s-btn{
 }
 .features-grid h3{
 	font-family: 'Roboto Slab', serif;
-	color:#ffe13e;
+	color:#cc7741;
 	font-size:1.8em;
 }
 .features-grid p{
@@ -548,7 +548,7 @@ a.s-btn{
 }
 /*------ pricing-plan -----*/
 .pricing-plan{
-	background:#202242;
+	background:#20242f;
 	padding:4em 0;
 }
 .pricing-plan-left h2{
@@ -559,7 +559,7 @@ a.s-btn{
 	font-size:2.2em;
 }
 .pricing-plan-left span{
-	color:#67687b;
+	color:#fff;
 	padding:0.5em 0 0 0;
 	display:block;
 	margin:0;
@@ -574,16 +574,16 @@ a.s-btn{
 	width:30%;
 }
 a.price-btn{
-	background:#ffe13e;
+	background:#cc7741;
 	color:#202242;
 	padding:1.3em 2em;
 	font-weight:700;
-	border:3px solid #EEE;
+	border:3px solid #886b63;
 	text-decoration:none;
 	font-size:1.3em;
 }
 a.price-btn:hover{
-	background:#FFF;
+	background:#CFAB61;
 	border-color:#ffe13e;
 }
 .pricing-plan-right{
@@ -823,7 +823,7 @@ a.to-top:hover{
 		text-decoration:none;
 }
 .pricing-table-grid ul li a:hover{
-	color:#ffe13e;
+	color:#cc7741;
 }
 .pricing-table-grid h3{
 	font-family: 'Roboto Slab', serif;
@@ -864,7 +864,7 @@ a.to-top:hover{
 	color:#FFF;
 }
 .pricing-table-grid ul li span{
-	background:#ffe13e;
+	background:#cc7741;
 	padding:0.5em 0;
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -933,7 +933,7 @@ a.order-btn:hover{
 	margin:0.5em 0 0 0;
 }
 .features-grid-right span{
-	color:#ffe13e;
+	color:#cc7741;
 }
 .h-features-grid{
 	padding: 1.5em 0;
@@ -961,7 +961,7 @@ a.order-btn:hover{
 	text-decoration:none;
 }
 .domain-grid-right span{
-	color: #ffe13e;
+	color: #cc7741;
 	line-height: 1.5em;
 	margin: 0 auto 0.5em auto;
 	display:block;
@@ -993,7 +993,7 @@ a.order-btn:hover{
 	font-weight:700;
 }
 .hosting-grid h2 span{
-	color:#ffe13e;
+	color:#cc7741;
 }
 .hosting-grid p{
 	font-size:2em;
@@ -2249,4 +2249,234 @@ a.order-btn:hover{
 		height: 35px;
 	}
 }
+
+	/* 2.2 - Social Button
+------------------------------------------ */
+.social-btn-container{
+	text-align:center;
+	margin:50px auto 0 auto;
+}
+.social-btn-container .social-btn-box{
+	display:inline-block;
+	width:60px;
+	height:60px;
+
+	-webkit-transform:rotate(45deg);
+	   -moz-transform:rotate(45deg);
+	    -ms-transform:rotate(45deg);
+	     -o-transform:rotate(45deg);
+	        transform:rotate(45deg);
+
+	border:1px solid #fff;
+
+	-webkit-border-radius:5px;
+	   -moz-border-radius:5px;
+	    -ms-border-radius:5px;
+	     -o-border-radius:5px;
+	        border-radius:5px;
+
+	margin:15px;
+	position:relative;
+	overflow:hidden;
+}
+.social-btn-container .social-btn-box a{
+	color:#fff;
+	font-size:26px;
+	line-height:80px;
+	display:inline-block;
+	width:80px;
+	height:80px;
+	position:absolute;
+	top:-10px;
+	left:-10px;
+
+	-webkit-transform:rotate(-45deg);
+	   -moz-transform:rotate(-45deg);
+	    -ms-transform:rotate(-45deg);
+	     -o-transform:rotate(-45deg);
+	        transform:rotate(-45deg);
+}
+.social-btn-box,
+.social-btn-box a{
+	
+	-webkit-transition:all .25s;
+	   -moz-transition:all .25s;
+	    -ms-transition:all .25s;
+	     -o-transition:all .25s;
+	        transition:all .25s;
+}
+.social-btn-box:hover{
+	border-color:transparent;
+}
+.social-btn-box .facebook-btn:hover{
+	background:#3B5998;
+	color: #fff;
+}
+.social-btn-box .twitter-btn:hover{
+	background:#55ACEE;
+	color: #fff;
+}
+.social-btn-box .linkedin-btn:hover{
+	background:#0077b5;
+	color: #fff;
+}
+.social-btn-box .google-plus-btn:hover{
+	background:#db514f;
+	color: #fff;
+}
+.social-btn-box .youtube-btn:hover{
+	background:#cc181e;
+	color: #fff;
+}
+.social-btn-box .github-btn:hover{
+	background:#2b2e30;
+	color: #fff;
+}
+.social-btn-box .a:hover{
+	background:#3498db;
+	color: #fff;
+}
+/* 2.2 - Social Button
+------------------------------------------ */
+
+
+/* 5 - About Us Section
+---------------------------------------------------------------------- */
+.team-container .col-sm-4{
+	padding:60px 15px 0 15px;
+}
+.team-container .team-member{
+	max-width:245px;
+	margin:auto;
+	position:relative;
+	overflow:hidden;
+}
+
+
+.team-container figcaption{
+	text-align:center;
+	text-transform:uppercase;
+	width:100%;
+	height:110px;
+	border:1px solid #fff;
+	border-top-color:transparent;
+	margin:0;
+}
+.team-container figcaption h4{
+	font-size:22px;
+	font-weight:700;
+	padding-top:20px;
+}
+.team-container .member-name {
+	font-size: 1.5em;
+	font-weight: 700;
+	margin: 0;
+	padding: 26px 10px 5px 10px;
+}
+.team-container figcaption p{
+	font-size: 1.125em;
+}
+.team-container .social-buttons{
+	display:inline-block;
+	margin:auto;
+	text-align:center;
+	width:100%;
+}
+
+.team-member .social-btn-container,
+.team-member .social-btn-container .social-btn-box{
+	-webkit-transition:all .25s;
+	   -moz-transition:all .25s;
+	    -ms-transition:all .25s;
+	     -o-transition:all .25s;
+	        transition:all .25s;
+}
+
+.team-member .social-btn-container {
+	position: absolute;
+	top: 0px;
+	margin: 0 auto;
+	left: 0;
+}
+.team-member:hover .social-btn-container{
+	background: rgba(0,0,0,.5);
+}
+.team-member .social-btn-container .team-socail-btn{
+	overflow: hidden;
+	position: relative;
+	width:245px;
+	height: 230px;
+}
+.team-member .social-btn-container .social-btn-box{
+	position: absolute;
+
+}
+.team-member .social-btn-container .facebook-btn-container{
+	bottom: 220px;
+	right: 230px;
+}
+.team-member .social-btn-container .twitter-btn-container{
+	bottom: 220px;
+	left: 230px;
+}
+.team-member .social-btn-container .linkedin-btn-container{
+	top: 220px;
+	right: 230px;
+}
+.team-member .social-btn-container .github-btn-container{
+	top: 220px;
+	left: 230px;
+}
+
+.team-member:hover .social-btn-container .facebook-btn-container{
+	bottom: 115px;
+	right: 122px;
+}
+.team-member:hover .social-btn-container .twitter-btn-container{
+	bottom: 115px;
+	left: 122px;
+}
+.team-member:hover .social-btn-container .linkedin-btn-container{
+	top: 115px;
+	right: 122px;
+}
+.team-member:hover .social-btn-container .github-btn-container{
+	top: 115px;
+	left: 122px;
+}
+.team-container .social-buttons a{
+	color:#fff;
+	width:24px;
+	height:24px;
+	display:inline-block;
+	font-size:24px;
+	text-align:center;
+}
+.team-container .team-member figure,
+.team-container .team-member figcaption,
+.team-container .team-member img,
+.team-container .team-member .social-buttons{
+	
+	-webkit-transition:all .25s;
+	   -moz-transition:all .25s;
+	    -ms-transition:all .25s;
+	     -o-transition:all .25s;
+	        transition:all .25s;
+}
+.team-container .team-member:hover figure{
+	background-color:#3498db;
+	color:#fff;
+}
+.team-container .team-member:hover figcaption{
+	border-color:#3498db;
+	color:#fff;
+}
+
+.team-container .team-member:hover .social-buttons{
+	top:90px;
+}
+/* 5 - About Us Section End 
+---------------------------------------------------------------------- */
+
+
 

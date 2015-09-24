@@ -16,6 +16,143 @@ $('#about').addClass("active");
 				<div class="about-grids">
 					<div class="container">
 						<div class="about-left-grids">
+						<div class="team-container">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="team-member">
+								<figure>
+									<img src="images/team/team-member-1.jpg" alt="Team Member">
+									<figcaption>
+										<p class="member-name">JPepecho</p>
+										<p class="designation">
+											CEO
+										</p><!-- /.designation -->
+
+									</figcaption>
+								</figure>
+								<div class="social-btn-container">
+									<div class="team-socail-btn">
+										<span class="social-btn-box facebook-btn-container">
+											<a href="#" class="facebook-btn">
+												<i class="fa fa-facebook"></i>
+											</a><!-- /.facebook-btn -->
+										</span><!-- /.social-btn-box -->
+
+										<span class="social-btn-box twitter-btn-container">
+											<a href="#" class="twitter-btn">
+												<i class="fa fa-twitter"></i>
+											</a><!-- /.twitter-btn -->
+										</span><!-- /.social-btn-box -->
+
+										<span class="social-btn-box linkedin-btn-container">
+											<a href="#" class="linkedin-btn">
+												<i class="fa fa-linkedin"></i>
+											</a><!-- /.linkedin-btn -->
+										</span><!-- /.social-btn-box -->
+
+										<span class="social-btn-box github-btn-container">
+											<a href="#" class="github-btn">
+												<i class="fa fa-github-alt"></i>
+											</a><!-- /.github-btn -->
+										</span><!-- /.social-btn-box -->
+									</div><!-- /.team-socail-btn -->
+								</div><!-- /.social-btn-container -->
+							</div><!-- /.team-member -->
+						</div><!-- /.col-sm-4 -->
+
+
+						<div class="col-sm-4">
+							<div class="team-member">
+								<figure>
+									<img src="images/team/team-member-2.jpg" alt="Team Member">
+									<figcaption>
+										<p class="member-name">
+											Claudia Springer
+										</p><!-- /.member-name -->
+										<p class="designation">
+											Designer 
+										</p><!-- /.designation -->
+
+									</figcaption>
+								</figure>
+								<div class="social-btn-container">
+									<div class="team-socail-btn">
+										<span class="social-btn-box facebook-btn-container">
+											<a href="#" class="facebook-btn">
+												<i class="fa fa-facebook"></i>
+											</a><!-- /.facebook-btn -->
+										</span><!-- /.social-btn-box -->
+
+										<span class="social-btn-box twitter-btn-container">
+											<a href="#" class="twitter-btn">
+												<i class="fa fa-twitter"></i>
+											</a><!-- /.twitter-btn -->
+										</span><!-- /.social-btn-box -->
+
+										<span class="social-btn-box linkedin-btn-container">
+											<a href="#" class="linkedin-btn">
+												<i class="fa fa-linkedin"></i>
+											</a><!-- /.linkedin-btn -->
+										</span><!-- /.social-btn-box -->
+
+										<span class="social-btn-box github-btn-container">
+											<a href="#" class="github-btn">
+												<i class="fa fa-github-alt"></i>
+											</a><!-- /.github-btn -->
+										</span><!-- /.social-btn-box -->
+									</div><!-- /.team-socail-btn -->
+								</div><!-- /.social-btn-container -->
+							</div><!-- /.team-member -->
+						</div><!-- /.col-sm-4 -->
+
+
+						<div class="col-sm-4">
+							<div class="team-member">
+								<figure>
+									<img src="images/team/team-member-3.jpg" alt="Team Member">
+									<figcaption>
+										<p class="member-name">
+											Max Anthony
+										</p><!-- /.member-name -->
+										<p class="designation">
+											Developer 
+										</p><!-- /.designation -->
+
+									</figcaption>
+								</figure>
+								<div class="social-btn-container">
+									<div class="team-socail-btn">
+										<span class="social-btn-box facebook-btn-container">
+											<a href="#" class="facebook-btn">
+												<i class="fa fa-facebook"></i>
+											</a><!-- /.facebook-btn -->
+										</span><!-- /.social-btn-box -->
+
+										<span class="social-btn-box twitter-btn-container">
+											<a href="#" class="twitter-btn">
+												<i class="fa fa-twitter"></i>
+											</a><!-- /.twitter-btn -->
+										</span><!-- /.social-btn-box -->
+
+										<span class="social-btn-box linkedin-btn-container">
+											<a href="#" class="linkedin-btn">
+												<i class="fa fa-linkedin"></i>
+											</a><!-- /.linkedin-btn -->
+										</span><!-- /.social-btn-box -->
+
+										<span class="social-btn-box github-btn-container">
+											<a href="#" class="github-btn">
+												<i class="fa fa-github-alt"></i>
+											</a><!-- /.github-btn -->
+										</span><!-- /.social-btn-box -->
+									</div><!-- /.team-socail-btn -->
+								</div><!-- /.social-btn-container -->
+							</div><!-- /.team-member -->
+						</div><!-- /.col-sm-4 -->
+					</div><!-- /.row -->
+					
+				</div><!-- /.team-container -->
+
 							<h2>This is main heading H2</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elit turpis, dictum nec auctor at, semper nec lectus. Aenean vitae cursus neque. Suspendisse at aliquet tortor. Donec eget laoreet lectus, ac sollicitudin diam. Nunc orci urna, sagittis vel semper in,</p>
 							<h3>This is main heading H3</h3>
